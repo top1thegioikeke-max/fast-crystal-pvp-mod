@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "fastpvp",
+  "version": "${version}",
+  "name": "FastPvP",
+  "description": "Reduces client-side delays for End Crystal and Respawn Anchor PvP.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.fastpvp.FastPvpClient"]
+  },
+  "mixins": [
+    { "config": "fastpvp.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
